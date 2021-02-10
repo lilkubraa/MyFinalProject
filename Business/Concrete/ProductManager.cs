@@ -17,6 +17,15 @@ namespace Business.Concrete
             _ProductDal = productDal;
         }
 
+        public ProductManager()
+        {
+        }
+
+        public IEnumerable<object> GetAllByUnitPrice(int v1, int v2)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Product> GetAll()
         {
             //iş kodları
@@ -29,6 +38,11 @@ namespace Business.Concrete
         public List<Product> GetAllByCategoryId(int id)
         {
             return _ProductDal.GetAll(p => p.CategoryId == id);
+        }
+
+        public IEnumerable<object> GeProductDetails()
+        {
+            throw new NotImplementedException();
         }
 
         public List<Product> GetByUnitPrice(decimal min, decimal max)
