@@ -10,6 +10,7 @@ namespace DataAccess.Abstract
     {
 
         List<ProductDetailsDto> GetProductDetails();
+        void Add(object product);
     }
 }
 // bu olaya 'code refaractoring' denir kodun iyileştirilmesi
